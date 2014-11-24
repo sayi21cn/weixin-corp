@@ -8,6 +8,7 @@ weixin-corp
   （微信内部使用的加密算法和给开发这提供的不一致decode(encode(a))<>a，做了修正，方便测试）   
     
 1.如何初始化
+
 	ApiConfig.setAppId("wxb21adacab9c87409");
 	ApiConfig.setAppSecret("22ix3QfnYy690tvDdsJN7NkoEhj485X98H9Gpn8grU7VUxLOsFaAOGPrx9gTPF0s");
 	ApiConfig.setEncodingAESKey("vuSWZYdBrwWqeFEHZQVM6kFngXaz6AhRXuTwO1b1MCH");
