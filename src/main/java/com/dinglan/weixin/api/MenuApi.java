@@ -23,7 +23,7 @@ public class MenuApi {
 	 */
 	public static ApiResult createMenu(String agentId,String jsonStr) {
 		String token=AccessTokenApi.getAccessToken().getAccessToken();
-		String jsonResult = HttpKit.get(String.format(createMenu,agentId,token));
+		String jsonResult = HttpKit.post(String.format(createMenu,agentId,token),jsonStr);
 		return new ApiResult(jsonResult);
 	}
 }
